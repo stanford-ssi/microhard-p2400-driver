@@ -6,16 +6,33 @@ Connect over serial with a 9-pin VGA.
 screen /dev/tty.usbserial-1130 9600 cs8 -cstopb -parenb -ixoff
 ```
 
-## Set into command mode
+## Command mode
 
+### Force Into Command Mode
+
+0. disconnect 9-pin connector and reconnect
 1. push button
 2. power on
-1. button off
-3. send connection message
-4. power off
-5. push button
-6. power on
-7. button off
+3. button off
+4. send connection message
+5. power off
+6. push button
+7. power on
+8. button off
+
+### From Data Mode
+
+```serial
++++
+```
+
+## Data mode
+
+### From Command Mode
+
+```serial
+ATA
+```
 
 ## Print statistics
 
