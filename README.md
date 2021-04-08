@@ -3,6 +3,7 @@
 Connect over serial with a 9-pin VGA.
 
 ```bash
+ls /dev/tty to find
 screen /dev/tty.usbserial-1130 9600 cs8 -cstopb -parenb -ixoff
 ```
 
@@ -37,3 +38,9 @@ ATA
 ## Print statistics
 
 AT&V
+
+---
+
+## Tests
+
+[Point to point testing](p2p_test.md)
